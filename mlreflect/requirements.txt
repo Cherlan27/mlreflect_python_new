@@ -1,0 +1,10 @@
+tensorflow
+scipy
+pandas
+tqdm
+h5py
+numpy
+typing
+matplotlib
+packaging
+fabio
