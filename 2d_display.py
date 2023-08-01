@@ -86,7 +86,7 @@ Q = None
 # == flatfield correction
 if settings["use_flatfield"] == True:
     flatfield = numpy.array(Image.open(settings["flatfield"]))
-    img = img / flatfield
+    img = img #/ flatfield
 
 # == plot
 rcParams["figure.figsize"] = 8, 5
@@ -174,8 +174,6 @@ ax.set_ylabel(AXIS_LABELS[settings["ydim"]] if Q is not None else "y-pixel", fon
 #ax.set_xlim([0,100])
 #ax.set_ylim([70,110])
 
-ax.set_xlim([0,100])
-ax.set_ylim([50,210])
 # if settings["plot_title"] is not None:
 #     ax.set_title(settings["plot_title"])
 plt.subplots_adjust(bottom=0.12)
